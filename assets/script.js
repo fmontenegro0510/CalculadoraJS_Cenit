@@ -12,18 +12,23 @@
 
 //Dark Mode
 flagDarkMode = false;
-const dm =()=>{
+const DarkMode =()=>{
    !flagDarkMode ? document.getElementById("html").classList ="dark" : document.getElementById("html").classList ="light";
     flagDarkMode=!flagDarkMode;
 }
 
 let cifra = 0;
 //borrar el contenido del display
-    const clearDisplay = () => document.getElementById("display").value = 0
+    const clearDisplay = () => document.getElementById("display").value = ""
 
 
-//Eventos a tener en cuenta
+//Show in display press numbers
+const showDisplay = (value) =>{
+     document.getElementById("display").value += value
 
+}
+
+//Situaciones a tener en cuenta
 /*
 una tecla numérica (0-9)
 una tecla de operador ( + , -,×,÷)
@@ -31,3 +36,11 @@ la tecla decimal
 la tecla de igualdad
 la tecla "clear"
 */
+
+
+function resolver() {
+    let x = document.getElementById('display').value;
+    let y = eval(x);
+    document.getElementById('display').value = y;
+    return y;
+}

@@ -24,7 +24,7 @@
               </label>
               <div class="collapsible-body">
                 <ul class="inline">
-                  <li><a href="#" onclick="dm()">Dark Mode</a></li>
+                  <li><a href="#" onclick="DarkMode()">Dark Mode</a></li>
                   <li><a href="https://github.com/fmontenegro0510/CalculadoraJS_Cenit" target="_blank">Github</a></li>
                 </ul>
               </div>
@@ -32,31 +32,34 @@
           </nav>
         <br>
         <br>
-
-      <h1><input type="text" class="display" value="12345678910" id="display"></h1>
-      <div class="row">
-        <div class="col-3 col"><button class="btn-large">7</button></div>
-        <div class="col-3 col"><button class="btn-large">8</button></div>
-        <div class="col-3 col"><button class="btn-large">9</button></div>
-        <div class="col-3 col"><button class="btn-large">+</button></div>
-      </div>
-      <div class="row">
-        <div class="col-3 col"><button class="btn-large">4</button></div>
-        <div class="col-3 col"><button class="btn-large">5</button></div>
-        <div class="col-3 col"><button class="btn-large">6</button></div>
-        <div class="col-3 col"><button class="btn-large">-</button></div>
-      </div>
-      <div class="row">
-        <div class="col-3 col"><button class="btn-large">1</button></div>
-        <div class="col-3 col"><button class="btn-large">2</button></div>
-        <div class="col-3 col"><button class="btn-large">3</button></div>
-        <div class="col-3 col"><button class="btn-large">+</button></div>
-      </div>
-      <div class="row">
-        <div class="col-3 col"><button class="btn-large">0</button></div>
-        <div class="col-3 col"><button class="btn-large">,</button></div>
-        <div class="col-6 col"><button class="btn-large btn-block" onclick="clearDisplay()">=</button></div>
-      </div>
+        <div id="row" class="rDisplay">
+          <div class="col-9 col"><input type="text" class="display" value="12345678910" id="display"></div>
+          <div class="col-3 col"><button class="btn-large btn-danger" onclick="clearDisplay()">AC</button></div>
+        </div>
+        <div class="row flex-center">
+          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('7')">7</button></div>
+          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('8')">8</button></div>
+          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('9')">9</button></div>
+          <div class="col-3 col"><button class="btn-large paper-btn btn-secondary" onclick="showDisplay('+')">+</button></div>
+        </div>
+        <div class="row">
+          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('4')">4</button></div>
+          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('5')">5</button></div>
+          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('6')">6</button></div>
+          <div class="col-3 col"><button class="btn-large paper-btn btn-secondary" onclick="showDisplay('-')">-</button></div>
+        </div>
+        <div class="row">
+          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('1')">1</button></div>
+          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('2')">2</button></div>
+          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('3')">3</button></div>
+          <div class="col-3 col"><button class="btn-large paper-btn btn-secondary" onclick="showDisplay('*')">*</button></div>
+        </div>
+        <div class="row">
+          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('0')">0</button></div>
+          <div class="col-3 col"><button class="btn-large btn-warning-outline" onclick="showDisplay(',')">,</button></div>
+          <div class="col-3 col"><button class="btn-large paper-btn  btn-success" onclick="resolver()">=</button></div>
+          <div class="col-3 col"><button class="btn-large paper-btn btn-secondary" onclick="showDisplay('/')">/</button></div>
+        </div>
     </div>
     <script src="./assets/script.js"></script>
   </body>

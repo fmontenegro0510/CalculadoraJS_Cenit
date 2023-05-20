@@ -16,26 +16,12 @@ const DarkMode =()=>{
    !flagDarkMode ? document.getElementById("html").classList ="dark" : document.getElementById("html").classList ="light";
     flagDarkMode=!flagDarkMode;
 }
-
-let cifra = 0;
 //borrar el contenido del display
-    const clearDisplay = () => document.getElementById("display").value = ""
-
+const clearDisplay = () => document.getElementById("display").value = ""
 
 //Show in display press numbers
-const showDisplay = (value) =>{
-     document.getElementById("display").value += value
+const showDisplay = (value) =>document.getElementById("display").value += value
 
-}
-
-//Situaciones a tener en cuenta
-/*
-una tecla numérica (0-9)
-una tecla de operador ( + , -,×,÷)
-la tecla decimal
-la tecla de igualdad
-la tecla "clear"
-*/
 
 /**
  * Resuelve la operacion matematica descripta en el display y lo muestra en el display
@@ -43,7 +29,7 @@ la tecla "clear"
  * @return {number} The result of the evaluated expression.
  */
 
-function resolver() {
+const resolver = () => {
     //Obtener el valor
     let x = document.getElementById('display').value;
     //Evaluar la operacion matematica y devolver el resultado
@@ -60,3 +46,5 @@ document.getElementById('display').addEventListener('keydown', (e) => {
         showDisplay(e.key);
     }
 })
+
+

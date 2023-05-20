@@ -7,5 +7,10 @@
 }
 
 .rDisplay{
-    display: inline-flex;   
+    /* display: inline-flex; */
+    font-size: xxx-large;   
+}
+
+.btn-calc{
+    font-size: xxx-large;
 }

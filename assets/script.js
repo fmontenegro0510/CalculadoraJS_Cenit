@@ -37,10 +37,26 @@ la tecla de igualdad
 la tecla "clear"
 */
 
+/**
+ * Resuelve la operacion matematica descripta en el display y lo muestra en el display
+ *
+ * @return {number} The result of the evaluated expression.
+ */
 
 function resolver() {
+    //Obtener el valor
     let x = document.getElementById('display').value;
+    //Evaluar la operacion matematica y devolver el resultado
     let y = eval(x);
+    //Mostrar el resultado en el display 
     document.getElementById('display').value = y;
-    return y;
 }
+
+//admitir solo numeros en el display 
+document.getElementById('display').addEventListener('keydown', (e) => {
+    console.log(e.key);
+    if (e.key >= '0' && e.key <= '9') {
+        console.log(e.key + " es un numero");
+        showDisplay(e.key);
+    }
+})

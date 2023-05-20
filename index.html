@@ -13,7 +13,7 @@
     <div class="paper container ">
         <nav class="border fixed split-nav">
             <div class="nav-brand">
-              <h3><a href="#">Calculadora Javascript</a></h3>
+              <h3><a >Calculadora Javascript</a></h3>
             </div>
             <div class="collapsible">
               <input id="collapsible1" type="checkbox" name="collapsible1">
@@ -32,33 +32,33 @@
           </nav>
         <br>
         <br>
-        <div id="row" class="rDisplay">
-          <div class="col-9 col"><input type="text" class="display" value="12345678910" id="display"></div>
-          <div class="col-3 col"><button class="btn-large btn-danger" onclick="clearDisplay()">AC</button></div>
+        <div id="row" class="row rDisplay margin">
+          <div class="col-9 col"><input type="text" class="display btn-calc" id="display"></div>
+          <div class="col-3 col"><button class="btn-large btn-block btn-danger" onclick="clearDisplay()">AC</button></div>
         </div>
-        <div class="row flex-center">
-          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('7')">7</button></div>
-          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('8')">8</button></div>
-          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('9')">9</button></div>
-          <div class="col-3 col"><button class="btn-large paper-btn btn-secondary" onclick="showDisplay('+')">+</button></div>
+        <div class="row margin ">
+          <div class="col-3 col"><button class="btn-calc btn-block btn-secondary-outline" onclick="showDisplay('7')">7</button></div>
+          <div class="col-3 col"><button class="btn-calc btn-block btn-secondary-outline" onclick="showDisplay('8')">8</button></div>
+          <div class="col-3 col"><button class="btn-calc btn-block btn-secondary-outline" onclick="showDisplay('9')">9</button></div>
+          <div class="col-3 col"><button class="btn-calc btn-block btn-secondary" onclick="showDisplay('+')">+</button></div>
         </div>
-        <div class="row">
-          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('4')">4</button></div>
-          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('5')">5</button></div>
-          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('6')">6</button></div>
-          <div class="col-3 col"><button class="btn-large paper-btn btn-secondary" onclick="showDisplay('-')">-</button></div>
+        <div class="row margin">
+          <div class="col-3 col"><button class="btn-calc btn-block btn-secondary-outline" onclick="showDisplay('4')">4</button></div>
+          <div class="col-3 col"><button class="btn-calc btn-block btn-secondary-outline" onclick="showDisplay('5')">5</button></div>
+          <div class="col-3 col"><button class="btn-calc btn-block btn-secondary-outline" onclick="showDisplay('6')">6</button></div>
+          <div class="col-3 col"><button class="btn-large btn-block btn-secondary" onclick="showDisplay('-')">-</button></div>
         </div>
-        <div class="row">
-          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('1')">1</button></div>
-          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('2')">2</button></div>
-          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('3')">3</button></div>
-          <div class="col-3 col"><button class="btn-large paper-btn btn-secondary" onclick="showDisplay('*')">*</button></div>
+        <div class="row margin">
+          <div class="col-3 col"><button class="btn-calc btn-block btn-secondary-outline" onclick="showDisplay('1')">1</button></div>
+          <div class="col-3 col"><button class="btn-calc btn-block btn-secondary-outline" onclick="showDisplay('2')">2</button></div>
+          <div class="col-3 col"><button class="btn-calc btn-block btn-secondary-outline" onclick="showDisplay('3')">3</button></div>
+          <div class="col-3 col"><button class="btn-large btn-block btn-secondary" onclick="showDisplay('*')">*</button></div>
         </div>
-        <div class="row">
-          <div class="col-3 col"><button class="btn-large btn-secondary-outline" onclick="showDisplay('0')">0</button></div>
-          <div class="col-3 col"><button class="btn-large btn-warning-outline" onclick="showDisplay(',')">,</button></div>
-          <div class="col-3 col"><button class="btn-large paper-btn  btn-success" onclick="resolver()">=</button></div>
-          <div class="col-3 col"><button class="btn-large paper-btn btn-secondary" onclick="showDisplay('/')">/</button></div>
+        <div class="row margin">
+          <div class="col-3 col"><button class="btn-calc btn-block btn-secondary-outline" onclick="showDisplay('0')">0</button></div>
+          <div class="col-3 col"><button class="btn-calc btn-block btn-warning-outline" onclick="showDisplay('.')">.</button></div>
+          <div class="col-3 col"><button class="btn-calc btn-block btn-success" onclick="resolver()">=</button></div>
+          <div class="col-3 col"><button class="btn-large btn-block btn-secondary " onclick="showDisplay('/')">/</button></div>
         </div>
     </div>
     <script src="./assets/script.js"></script>

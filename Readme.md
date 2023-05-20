@@ -1,11 +1,8 @@
 
 # Calculadora  🧮
 
-  Esta es una calculadora básica que permite realizar operaciones matemáticas simples. Es una aplicación de consola desarrollada en Html + CSS + JS .
-
-[![forthebadge](https://forthebadge.com/images/badges/validated-html5.svg)](https://forthebadge.com) 
-  
-
+  Esta es una calculadora básica que permite realizar operaciones matemáticas simples. 
+  Es una aplicación de consola desarrollada en ![html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)![css3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)![javasscript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ## 😎 Características
 
 - Suma, resta, multiplicación y división de números enteros y decimales.
@@ -70,3 +67,4 @@ Si encuentras algún error o tienes alguna sugerencia de mejora, por favor, abre
 ## Licencia
 
 Este proyecto se encuentra sin ninguna licencia específica, lo que significa que se puede utilizar y compartir libremente sin restricciones. Si deseas utilizarlo, siéntete libre de hacerlo sin necesidad de solicitar permisos adicionales
+

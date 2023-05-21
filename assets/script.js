@@ -22,7 +22,6 @@ const clearDisplay = () => document.getElementById("display").value = ""
 //Show in display press numbers
 const showDisplay = (value) =>document.getElementById("display").value += value
 
-
 /**
  * Resuelve la operacion matematica descripta en el display y lo muestra en el display
  *
@@ -46,5 +45,57 @@ document.getElementById('display').addEventListener('keydown', (e) => {
         showDisplay(e.key);
     }
 })
+
+
+function insertNavbar(divId) {
+    const navbarHtml = `
+    <nav class="border fixed split-nav">
+        <div class="nav-brand">
+        <h3><a>Calculadora Javascript</a></h3>
+        </div>
+        <div class="collapsible">
+        <input id="collapsible1" type="checkbox" name="collapsible1">
+        <label for="collapsible1">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </label>
+        <div class="collapsible-body">
+            <ul class="inline">
+            <li><a href="#" onclick="DarkMode()">Dark Mode</a></li>
+            <li><a href="https://github.com/fmontenegro0510/CalculadoraJS_Cenit" target="_blank">Github</a></li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    `;
+    const divElement = document.getElementById(divId);
+    divElement.innerHTML = navbarHtml;
+  }
+  
+
+
+  //validar la entrada del usuario desde el display
+
+const allowedChars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+const inputElement = document.getElementById('input1');
+function validateInput(event) {
+    const currentValue = inputElement.value;
+    const lastChar = currentValue[currentValue.length - 1];
+    if (!allowedChars.includes(lastChar)) {
+        inputElement.value = currentValue.slice(0, currentValue.length - 1);
+    }
+}
+ 
+window.addEventListener('load', function() {
+    //verifico si se ejecuto el evento load
+    console.log('loaded');
+    //inserto en el div navbar la barra de navegacion
+    insertNavbar('navbar');
+});
+
+
+
+
 
 

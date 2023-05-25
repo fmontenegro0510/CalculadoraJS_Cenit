@@ -17,7 +17,7 @@
 
 ## 🔧 Requisitos del sistema
 
-- Puede ser ejecutado de manera web, desde esta direccion
+- Puede ser ejecutado de manera web, desde esta direccion [Calculadora_Web](https://fluffy-croquembouche-f92c1a.netlify.app/)
 
 - Puede correr localmente desde su sistema, descargando del [repositorio](https://github.com/fmontenegro0510/CalculadoraJS_Cenit.git)  y posteriormente ejecutar el archivo index.html en el directorio raiz del proyecto, para su visualización en el navegador de su preferencia.
 
@@ -64,7 +64,7 @@ Si encuentras algún error o tienes alguna sugerencia de mejora, por favor, abre
 
   
 
-## Licencia
+## ⚖️ Licencia
 
 Este proyecto se encuentra sin ninguna licencia específica, lo que significa que se puede utilizar y compartir libremente sin restricciones. Si deseas utilizarlo, siéntete libre de hacerlo sin necesidad de solicitar permisos adicionales
 
